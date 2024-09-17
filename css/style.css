@@ -1,0 +1,387 @@
+/* Base styles */
+@import url('./base.css');
+
+/* Body container start */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2.5rem 3.5rem;
+}
+/* Body sections wrapper start */
+.body-sections-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 4rem;
+  width: 100%;
+  max-width: 77rem;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+/* Header start */
+.header {
+  display: flex;
+  width: 100%;
+  min-height: 19.125rem;
+  background-color: #93bbea;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 22%;
+  position: relative;
+}
+
+.header-img-1,
+.header-img-2 {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.header-img-1 {
+  left: 0;
+  margin-top: -2.3rem;
+}
+
+.header-img-2 {
+  right: 0.35rem;
+  bottom: 0.275rem;
+  transform: scale(1.055);
+}
+
+.header-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.header-hero-text {
+  display: block;
+  text-align: center;
+  /* height: 7.5rem; */
+}
+
+.hero-title {
+  font-family: 'Museo Sans Cyrl 900';
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.hero-subtitle {
+  font-family: 'Museo Sans Cyrl 500';
+  font-size: 17px;
+  line-height: 23.8px;
+  color: #ffffff;
+}
+
+.header-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.3875rem;
+  padding: 0.06rem 0;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  gap: 0.55rem;
+  width: 100%;
+  max-width: 10rem;
+  height: 100%;
+  min-height: 3rem;
+  border-radius: 12px;
+}
+
+.cta-btn-text {
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 15px;
+  line-height: 18px;
+  color: #1a1a1a;
+}
+/* Header end */
+
+/* Main start */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 10.375rem;
+  width: 100%;
+  max-width: 62.25rem;
+  margin-top: 1.1rem;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+}
+
+.socials-container-item {
+}
+
+.container-item-text:first-child {
+  padding-bottom: 1rem;
+}
+
+.socials-subtitle {
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 15px;
+  line-height: 18px;
+  color: #1a1a1a;
+}
+/*! Should I move typography to Typogrgraphy file? It is main. Maybe just "h2"? */
+.socials-title,
+.faq-title,
+.referral-materials-title {
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 2.5rem;
+  line-height: 48px;
+  color: rgb(26, 26, 26);
+}
+
+.referral-materials-title {
+  margin-left: -0.5rem;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.875rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: rgba(249, 249, 249, 1);
+  border-radius: 13.33px;
+  cursor: pointer;
+}
+
+.main-faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0 3rem 0;
+}
+
+/* Carousel */
+.faq-container-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  max-width: 75rem;
+}
+
+.carousel-items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 17.625rem;
+  height: 100%;
+  min-height: 10rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0px 0px 1.1rem 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.carousel-item-text {
+  display: block;
+  padding: 1rem;
+}
+
+.carousel-item-text--modified {
+  max-width: 60%;
+}
+/*! Take it out from here??? */
+.faq-subtitle,
+.referral-materials-subtitle {
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 20px;
+  color: rgba(26, 26, 26, 1);
+  line-height: 24px;
+}
+
+.faq-paragraph {
+  font-family: 'Museo Sans Cyrl 500';
+  font-size: 0.9375rem;
+  line-height: 21px;
+  color: rgba(148, 148, 148, 1);
+  padding-top: 0.6rem;
+}
+
+.carousel-item-image {
+  position: relative;
+}
+
+.item-img-positioning {
+  position: absolute;
+  top: 0.2rem;
+  right: -0.2rem;
+}
+
+/* Carousel buttons */
+.carousel-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  max-width: 75rem;
+}
+
+.carousel-btn-left,
+.carousel-btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+
+.carousel-btn-left {
+  display: none;
+}
+
+.carousel-btn-left.show-left-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.carousel-btn-right {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.btn-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-icon-right,
+.arrow-icon-left {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 7px;
+  user-select: none;
+}
+
+.arrow-icon-left {
+}
+
+.arrow-icon-left {
+  transform: rotate(180deg);
+}
+
+/* Referral materials */
+.main-referral-materials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.referral-materials-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.referral-materials-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 62.25rem;
+  background: rgba(255, 255, 255, 1);
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.referral-materials-item-text {
+}
+
+/*! Take it out to the Typography */
+.referral-materials-paragraph {
+  font-family: 'Museo Sans Cyrl 500';
+  font-size: 13px;
+  color: rgba(148, 148, 148, 1);
+  line-height: 18.2px;
+  max-width: 50ch;
+  padding-top: 0.25rem;
+}
+
+.referral-materials-item-icon {
+  display: flex;
+  align-items: center;
+}
+/* Main end */
+
+/* Body sections wrapper start */
+/* Body container end */
