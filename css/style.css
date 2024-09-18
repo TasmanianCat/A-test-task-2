@@ -169,9 +169,6 @@
   box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
 }
 
-.socials-container-item {
-}
-
 .container-item-text:first-child {
   padding-bottom: 1rem;
 }
@@ -182,7 +179,7 @@
   line-height: 18px;
   color: #1a1a1a;
 }
-/*! Should I move typography to Typogrgraphy file? It is main. Maybe just "h2"? */
+
 .socials-title,
 .faq-title,
 .referral-materials-title {
@@ -241,6 +238,10 @@
   position: relative;
 }
 
+.carousel-items-wrapper {
+  transition: transform 0.4s ease-in-out;
+}
+
 .carousel-item {
   display: flex;
   justify-content: space-between;
@@ -263,7 +264,7 @@
 .carousel-item-text--modified {
   max-width: 60%;
 }
-/*! Take it out from here??? */
+
 .faq-subtitle,
 .referral-materials-subtitle {
   font-family: 'Museo Sans Cyrl 700';
@@ -347,9 +348,6 @@
 }
 
 .arrow-icon-left {
-}
-
-.arrow-icon-left {
   transform: rotate(180deg);
 }
 
@@ -385,7 +383,6 @@
   width: 95%;
 }
 
-/*! Take it out to the Typography */
 .referral-materials-paragraph {
   font-family: 'Museo Sans Cyrl 500';
   font-size: 13px;
@@ -776,7 +773,7 @@
   .referral-materials-subtitle {
     font-size: 1.2rem;
   }
-  /*! Carousel */
+  /* Carousel */
   .faq-container-carousel {
     max-width: 32.5rem;
   }

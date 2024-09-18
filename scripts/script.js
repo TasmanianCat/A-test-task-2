@@ -31,6 +31,10 @@ function updateCarousel() {
     -maxSlidesToShow * itemWidthWithMargin
   );
 
+  // Add a smooth transition effect
+  carouselItemsWrapper.style.transition = 'transform 0.4s ease-in-out';
+
+  // Update the transform property for sliding
   carouselItemsWrapper.style.transform = `translateX(${offset}px)`;
 
   // Show or hide the left button
