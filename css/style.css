@@ -767,6 +767,7 @@
   .faq-subtitle {
     font-size: 1.2rem;
     max-width: 100%;
+    line-height: 1.15;
   }
   .faq-paragraph {
     font-size: 1rem;
@@ -781,7 +782,7 @@
   }
   .carousel-item {
     width: 100%;
-    min-height: 11.5rem;
+    min-height: 13rem;
     min-width: 15rem;
     gap: 0.5rem;
   }
@@ -805,6 +806,11 @@
   }
   .referral-materials-item {
     padding: 1.25rem;
+  }
+  .item-img-positioning {
+    position: relative;
+    top: auto;
+    right: auto;
   }
 }
 
