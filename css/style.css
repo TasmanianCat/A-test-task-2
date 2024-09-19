@@ -16,8 +16,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 4rem;
-  width: 100%;
-  max-width: 77rem;
+  width: 1232px;
   padding: 0 1rem;
   overflow: hidden;
 }
@@ -25,8 +24,8 @@
 /* Header start */
 .header {
   display: flex;
-  width: 100%;
-  min-height: 19.125rem;
+  width: 1200px;
+  height: 306px;
   background-color: #93bbea;
   border-radius: 40px;
   overflow: hidden;
@@ -56,14 +55,17 @@
 }
 
 .header-img-1 {
+  width: 263px;
+  height: 196px;
+  top: 37px;
   left: 0;
-  margin-top: -2.3rem;
 }
 
 .header-img-2 {
-  right: 0.35rem;
-  bottom: 0.275rem;
-  transform: scale(1.055);
+  right: 0px;
+  bottom: 0px;
+  /* transform: scale(1.053); */
+  width: 277px;
 }
 
 .header-hero {
