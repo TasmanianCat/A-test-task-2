@@ -45,7 +45,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 19.125rem;
+  max-width: 75rem;
+  height: 306px;
   background-color: #93bbea;
   border-radius: 40px;
   overflow: hidden;
@@ -85,15 +86,23 @@
 }
 
 .header-img-1 {
+  width: 100%;
+  max-width: 263px;
+  height: auto;
+  max-height: 196px;
+  top: 37px;
   left: 0;
-  margin-top: -2.3rem;
 }
 
 .header-img-2 {
-  right: 0.35rem;
-  bottom: 0.275rem;
-  -webkit-transform: scale(1.055);
-          transform: scale(1.055);
+  right: 6px;
+  bottom: 0;
+  height: 100%;
+  max-height: 226px;
+  width: 100%;
+  max-width: 311px;
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
 }
 
 .header-hero {
@@ -120,16 +129,15 @@
 .header-hero-text {
   display: block;
   text-align: center;
+  margin-left: 1px;
 }
 
 .hero-title {
   font-family: 'Museo Sans Cyrl 900';
-  font-size: 3.75rem;
-  font-weight: 700;
+  font-size: 60px;
   line-height: 72px;
   color: #ffffff;
   margin-bottom: 0.3rem;
-  margin-left: 1px;
 }
 
 .hero-subtitle {
@@ -138,7 +146,7 @@
   line-height: 23.8px;
   color: #ffffff;
   max-width: 50ch;
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 .header-cta-buttons-wrapper {
@@ -192,20 +200,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(255, 255, 255, 1);
-  gap: 0.55rem;
-  width: 100%;
-  max-width: 10rem;
+  gap: 8px;
+  width: 160px;
   height: 100%;
   min-height: 3rem;
   border-radius: 12px;
-}
-
-.cta-btn-icon-phone {
-  margin-top: -2px;
-}
-
-.cta-btn-icon-mail {
-  margin-left: 2px;
 }
 
 .cta-btn-text {
@@ -214,6 +213,25 @@
   line-height: 18px;
   color: #1a1a1a;
 }
+
+/* Fixing pixels start */
+.cta-btn-icon-phone {
+  margin-top: -1px;
+  margin-left: 1px;
+}
+
+.cta-btn-icon-mail {
+  margin-left: 2px;
+}
+
+.btn-text-phone {
+  margin-left: 1px;
+}
+
+.btn-text-feedback {
+  margin-left: 2px;
+}
+/* Fixing pixels end */
 /* Header end */
 
 /* Main start */
@@ -281,7 +299,7 @@
 .faq-title,
 .referral-materials-title {
   font-family: 'Museo Sans Cyrl 700';
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 48px;
   color: rgb(26, 26, 26);
 }
@@ -357,7 +375,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   margin: 2rem 0;
   max-width: 75rem;
 }
@@ -556,6 +573,16 @@
   margin-top: 2rem;
 }
 
+.referral-materials-wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 .referral-materials-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,7 +668,20 @@
     overflow: visible;
   }
   .header-image {
-    width: 21%;
+    width: 21.5%;
+  }
+  .header-img-1 {
+    top: auto;
+  }
+
+  .header-img-2 {
+    right: 0px;
+    bottom: 0;
+    height: auto;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -651,7 +691,7 @@
     padding: 1.75rem;
   }
   .header-image {
-    width: 20%;
+    width: 21%;
   }
   /* Typography */
   .hero-title {
@@ -681,7 +721,7 @@
     padding: 1.5rem;
   }
   .header-image {
-    width: 19%;
+    width: 20.5%;
   }
   /* Typography */
   .hero-title {
@@ -700,7 +740,7 @@
     padding: 1.25rem;
   }
   .header-image {
-    width: 17.5%;
+    width: 20%;
   }
   .header-img-2 {
     margin-bottom: -2px;
@@ -722,7 +762,7 @@
 /* Screen width: 1024px*/
 @media (max-width: 64em) {
   .header-image {
-    width: 17%;
+    width: 19.5%;
   }
   /* Typography */
   .hero-title {
@@ -739,6 +779,7 @@
 @media (max-width: 60em) {
   .header {
     min-height: auto;
+    height: auto;
   }
   .header-hero {
     display: -webkit-box;
@@ -762,7 +803,7 @@
     padding: 2rem;
   }
   .header-image {
-    width: 16%;
+    width: 19%;
   }
   /* Typography */
   .hero-title {
@@ -834,7 +875,7 @@
 /* Screen width: 880px*/
 @media (max-width: 55em) {
   .header-image {
-    width: 12%;
+    width: 18.5%;
   }
   /* Typography */
   .hero-title {
@@ -851,6 +892,9 @@
 @media (max-width: 46.875em) {
   .body-sections-wrapper {
     overflow: hidden;
+  }
+  .header-image {
+    display: none;
   }
   /* Typography */
   .hero-title {
@@ -935,10 +979,7 @@
     gap: 0.5rem;
   }
   .header {
-    border-radius: 8px;
-  }
-  .header-image {
-    display: none;
+    border-radius: 16px;
   }
   .header-hero {
     padding: 1.5rem;
@@ -969,12 +1010,19 @@
     max-width: 3rem;
     border-radius: 8px;
   }
+  .cta-btn-icon-phone {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .cta-btn-icon-mail {
+    margin-left: 0;
+  }
   .cta-btn-text {
     display: none;
   }
   .socials-wrapper {
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 16px;
   }
   .container-item-text {
     padding-bottom: 1rem;
@@ -1108,9 +1156,25 @@
 
 /* Width: 440px */
 @media (max-width: 27.5em) {
+  .body-container {
+    padding: 0.85rem;
+  }
   /*Typography */
   .hero-title {
     font-size: 1.75rem;
+  }
+  /* Socials */
+  .social-icons-wrapper {
+    gap: 0.5rem;
+  }
+  .social-icon {
+    max-width: 2.1rem;
+    max-height: 2.1rem;
+  }
+  .social-icon img {
+    max-width: 1.85rem;
+    max-height: 1.85rem;
+    padding: 0.25rem;
   }
   .socials-title,
   .faq-title,
@@ -1126,24 +1190,8 @@
 
 /* Width: 400px */
 @media (max-width: 25em) {
-  .body-container {
-    padding: 0.85rem;
-  }
   .faq-container-carousel {
     max-width: 21.5rem;
-  }
-  /* Socials */
-  .social-icons-wrapper {
-    gap: 0.5rem;
-  }
-  .social-icon {
-    max-width: 2.1rem;
-    max-height: 2.1rem;
-  }
-  .social-icon img {
-    max-width: 1.85rem;
-    max-height: 1.85rem;
-    padding: 0.25rem;
   }
 }
 
@@ -1158,6 +1206,21 @@
 @media (max-width: 21.25em) {
   .faq-container-carousel {
     max-width: 18.25rem;
+  }
+  .body-container {
+    padding: 0.75rem;
+  }
+  /* Socials */
+  .social-icons-wrapper {
+    gap: 0.5rem;
+  }
+  .social-icon {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  .social-icon img {
+    max-width: 1.75rem;
+    max-height: 1.75rem;
   }
 }
 
